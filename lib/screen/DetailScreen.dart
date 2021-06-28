@@ -24,7 +24,7 @@ class DetailScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           CircleAvatar(
-                            backgroundColor: Colors.grey,
+                            backgroundColor: Colors.transparent,
                             child: IconButton(
                               icon: Icon(
                                 Icons.arrow_back,
@@ -35,7 +35,7 @@ class DetailScreen extends StatelessWidget {
                               },
                             ),
                           ),
-                          FavoriteButton()
+                          SaveButton()
                         ],
                       )),
                 ),
@@ -53,15 +53,44 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
             Container(
-                padding: EdgeInsets.all(16.0),
-                child: Text(
-                  data.description,
-                  style: TextStyle(fontSize: 16.0),
-                  textAlign: TextAlign.center,
-                )),
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                data.description,
+                style: TextStyle(fontSize: 16.0),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 100),
+              padding: EdgeInsets.only(bottom: 10),
+              alignment: Alignment(0.9, 0.0),
+              child: FavoriteButton(),
+            )
           ],
         ),
       )),
+    );
+  }
+}
+
+class SaveButton extends StatefulWidget {
+  @override
+  _SaveButtonState createState() => _SaveButtonState();
+}
+
+class _SaveButtonState extends State<SaveButton> {
+  bool saved = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: Icon(saved ? Icons.bookmark : Icons.bookmark_border,
+          color: Colors.red),
+      onPressed: () {
+        setState(() {
+          saved = !saved;
+        });
+      },
     );
   }
 }
@@ -76,16 +105,18 @@ class _FavoriteButtonState extends State<FavoriteButton> {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      icon: Icon(
-        isFavorite ? Icons.favorite : Icons.favorite_border,
-        color: Colors.red,
-      ),
-      onPressed: () {
-        setState(() {
-          isFavorite = !isFavorite;
-        });
-      },
-    );
+    return CircleAvatar(
+        backgroundColor: Colors.white,
+        child: IconButton(
+          icon: Icon(
+            isFavorite ? Icons.favorite : Icons.favorite_border,
+            color: Colors.red,
+          ),
+          onPressed: () {
+            setState(() {
+              isFavorite = !isFavorite;
+            });
+          },
+        ));
   }
 }

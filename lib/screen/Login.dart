@@ -2,11 +2,14 @@ import 'package:emarket/constanst.dart';
 import 'package:emarket/screen/HomeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => new _State();
 }
+
+bool isValid = false;
 
 class _State extends State<LoginPage> {
   TextEditingController nameController = TextEditingController();
@@ -78,12 +81,14 @@ class _State extends State<LoginPage> {
                       child: Text('Masuk'),
                       onPressed: () {
                         if ((nameController.text) != '') {
+                          isValid = true;
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
                             return HomeScreen(name: nameController.text);
                           }));
                         } else {
-                          print('object');
+                          isValid = false;
+                          print('nama harus diisi');
                         }
                       },
                     )),

@@ -26,39 +26,43 @@ var recomendationList = [
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
   ),
   Recomendation(
-    country: 'Malaysia',
-    title: 'Kamboja',
+    country: 'Plantae',
+    title: 'Mawar',
     price: 500,
     image: 'images/plant2.jpg',
     description:
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
+        'Mawar adalah suatu jenis tanaman semak dari genus Rosa sekaligus nama bunga yang dihasilkan tanaman ini. Mawar liar terdiri dari 100 spesies lebih, kebanyakan tumbuh di belahan bumi utara yang berudara sejuk.',
+  ),
+  Recomendation(
+    country: 'Indonesia',
+    title: 'Beringin',
+    price: 500,
+    image: 'images/plant3.jpg',
+    description:
+        'Beringin, yang disebut juga waringin atau ara, dikenal sebagai tumbuhan pekarangan dan tumbuhan hias pot. Pemulia telah mengembangkan beringin berdaun loreng yang populer sebagai tanaman hias ruangan. Beringin juga sering digunakan sebagai objek bonsai. Beringin sangat akrab dengan budaya asli Indonesia',
+  ),
+  Recomendation(
+    country: 'China',
+    title: 'Pakcoy',
+    price: 500,
+    image: 'images/plant4.jpg',
+    description:
+        'Pakcoy atau bok choy merupakan jenis sayuran yang populer. Sayuran yang dikenal pula sebagai sawi sendok ini mudah dibudidayakan dan dapat dimakan segar atau diolah menjadi asinan',
   ),
   Recomendation(
     country: 'Malaysia',
     title: 'Kamboja',
     price: 500,
-    image: 'images/plant2.jpg',
-    description: 'halo',
+    image: 'images/plant5.jpg',
+    description:
+        'Kemboja, kamboja atau semboja adalah sekelompok tumbuhan dalam marga Plumeria. Bentuknya berupa pohon kecil dengan daun jarang namun tebal. Bunganya yang harumnya sangat khas, dengan mahkota berwarna putih hingga merah keunguan, biasanya lima helai',
   ),
   Recomendation(
-    country: 'Malaysia',
-    title: 'Kamboja',
+    country: 'Gurun',
+    title: 'Cactus',
     price: 500,
-    image: 'images/plant2.jpg',
-    description: 'halo',
-  ),
-  Recomendation(
-    country: 'Malaysia',
-    title: 'Kamboja',
-    price: 500,
-    image: 'images/plant2.jpg',
-    description: 'halo',
-  ),
-  Recomendation(
-    country: 'Malaysia',
-    title: 'Kamboja',
-    price: 500,
-    image: 'images/plant2.jpg',
-    description: 'halo',
+    image: 'images/plant6.jpg',
+    description:
+        'Kaktus adalah nama yang diberikan untuk anggota tumbuhan berbunga famili Cactaceae. Kaktus dapat tumbuh pada waktu yang lama tanpa air. Kaktus biasa ditemukan di daerah-daerah yang kering (gurun). ... Kaktus memiliki akar yang panjang untuk mencari air dan memperlebar penyerapan air dalam tanah.',
   ),
 ];
