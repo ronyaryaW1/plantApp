@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
           title: Text(
             'Halo $name',
             style:
-                TextStyle(height: 3, fontWeight: FontWeight.bold, fontSize: 20),
+                TextStyle(height: 2, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           centerTitle: true,
           shape: RoundedRectangleBorder(
